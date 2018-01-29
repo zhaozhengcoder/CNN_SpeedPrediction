@@ -33,7 +33,7 @@ def merge_data(data,colname='speed'):
         merge_list.append(sum(speed_list[begin_index:begin_index+merge_step])/merge_step)
     return merge_list
 
-# 简单的填充数据，将缺失的数据np.nan的数据 改成1
+# 简单的填充数据，将缺失的数据np.nan的数据 填充
 def fillnan(data):
     #以一个默认的数值 填充
     #val=1.0
@@ -56,8 +56,18 @@ def select_time_period(data):
     print ("select data shape is : ",data2.shape)
     return data2
 
-def generate_pic():
-    pass
+#绘制热力图
+def heatmap(data):
+    data_to_arr = list(np.array(data['speed']))
+    width = len(data_to_arr)
+    height= 100
+    arr = np.zeros((height, width))
+    for i in range(height):
+        for j in range(width):
+            arr[i,j]= data_to_arr[j]
+    plt.matshow(arr, cmap='hot')
+    plt.colorbar()
+    plt.show()
 
 
 if __name__ =="__main__":
@@ -70,4 +80,5 @@ if __name__ =="__main__":
 
     selectdata = select_time_period(data)
     print (selectdata.head())
-    show(selectdata)
+    #show(selectdata)
+    heatmap(selectdata)
