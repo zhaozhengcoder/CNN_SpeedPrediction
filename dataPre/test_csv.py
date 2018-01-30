@@ -12,25 +12,7 @@ def miss_rate(data,colname='speed'):
     print (colname," miss rate is : ",miss_rate)
 
 
-data=pd.read_csv('test_csv.csv')
+if __name__ =="__main__":
+    data=pd.read_csv('11-14.csv')
+    miss_rate(data)
 
-#print (data)
-#print (type(data))
-
-print (data['speed'])
-
-arr = np.array(data['speed'])
-
-speed_list=arr.tolist()
-
-print (speed_list)
-
-
-print (miss_rate(data))
-
-"""
-data2 = pd.isnull(data['speed'])
-
-print ( data2[data2[0]==True] )
-#print ( pd.isnull(data['speed'])==True )
-"""
