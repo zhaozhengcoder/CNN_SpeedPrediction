@@ -4,16 +4,13 @@ import pandas as pd
 # read csv
 def read_csv(filepath):
     data=pd.read_csv(filepath)
-    return data 
+    data['last-update-time'] = pd.to_datetime(data['last-update-time'])
+    return data
 
 #pandas 取一个时间段的数据
-def select_time_period(data):
-    #uperlimit='2012-11-15  5:57:57'
-    #lowerlimit='2012-11-15  5:55:57'
-    uperlimit = '2012-11-14  23:59:26'
-    lowerlimit = '2012-11-14  0:00:16'
-    data1 = data[data['last-update-time']< uperlimit]
-    data2 =data1[data1['last-update-time'] > lowerlimit]
+def select_time_period(data,begin_day=14,end_day=15):
+    data1 =data[data['last-update-time']>datetime(2012,11,begin_day,0,0)]
+    data2 =data1[data1['last-update-time']<datetime(2012,11,end_day,0,0)]
     print ("select data shape is : ",data2.shape)
     return data2
 
