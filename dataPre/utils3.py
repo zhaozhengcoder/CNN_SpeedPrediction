@@ -26,7 +26,7 @@ def select_time_period(data,begin_day=14,end_day=15):
     return data2
 """
 
-# time
+# 选择某一天
 def select_col(orig_data,select_day=13):
     vol_col=[]
     speed_col=[]
@@ -83,16 +83,19 @@ def fill_df(result_df):
                             result_df[df_index].iloc[i,vol_col_index]   = result_df[find_index].iloc[i,vol_col_index]
                             break
                         find_index+=1
-                    result_df[df_index]=result_df[df_index].fillna(method='bfill')
                 else:   #从前面找
                     result_df[df_index].iloc[i,speed_col_index] = result_df[df_index-1].iloc[i,speed_col_index]
                     result_df[df_index].iloc[i,vol_col_index]   = result_df[df_index-1].iloc[i,vol_col_index]
 
+def default_fill(result_df):
+    for i in range(len(result_df)):
+        result_df[i]=result_df[i].fillna(method='ffill')
+    return result_df
 
 
 if __name__=="__main__":
-    filepath='52_csv.csv' 
-    data = read_csv(filepath)
+    filepath='52' 
+    data = read_csv(filepath+"_csv.csv")
     
      # 9-22
     select_day=[9,10,11,12,13,14,15,16,17,18,19,20,21,22]
@@ -110,5 +113,11 @@ if __name__=="__main__":
     for i in result_df:
         miss_rate(i)
 
+    print ("fill ")
+    result_df = default_fill(result_df)
+
+    for i in result_df:
+        miss_rate(i)
+
     for df ,day in zip(result_df,select_day):
-        df.to_csv(filepath+str(day)+'.csv')
+        df.to_csv(filepath+'_'+str(day)+'.csv')
