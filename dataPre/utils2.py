@@ -1,10 +1,12 @@
 import numpy as np 
 import pandas as pd 
+from datetime import datetime
 
 # read csv
 def read_csv(filepath):
     data=pd.read_csv(filepath)
-    data['last-update-time'] = pd.to_datetime(data['last-update-time'])
+    data['last-update-time'] = data['last-update-time'].map(lambda s:s[:-4])  #删掉秒
+    data['last-update-time'] = pd.to_datetime(data['last-update-time'])       #转换成时间戳的格式
     return data
 
 #pandas 取一个时间段的数据

@@ -19,6 +19,6 @@ def miss_rate(data,colname='speed'):
 
 
 if __name__ =="__main__":
-    data=pread_csv('test_csv.csv')
+    data=read_csv('test_csv.csv')
     miss_rate(data)
 
