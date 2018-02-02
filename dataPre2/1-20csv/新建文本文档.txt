@@ -1,0 +1,330 @@
+原始数据的miss rate ：
+
+1.csv  rate :  0.16254322958233572
+2.csv  rate :  0.16277074844520695
+3.csv  rate :  0.15320671066552471
+4.csv  rate :  0.1439404917161764
+5.csv  rate :  0.13324538258575197
+6.csv  rate :  0.16175087156217144
+7.csv  rate :  0.13997966397133588
+8.csv  rate :  0.16217035465292512
+9.csv  rate :  0.14563837797138862
+10.csv  rate :  0.14563837797138862
+11.csv  rate :  0.13171498074194202
+12.csv  rate :  0.06346826586706647
+13.csv  rate :  0.12107516650808754
+14.csv  rate :  0.1392025060366769
+15.csv  rate :  0.189481302774427
+16.csv  rate :  0.18526397215238832
+17.csv  rate :  0.126088379705401
+18.csv  rate :  0.13233678781221644
+19.csv  rate :  0.055236190952261933
+20.csv  rate :  0.15276635129576305
+
+
+补全时间（0-24小时）之后的miss rate ： 
+1.csv  rate >>>
+col :  speed , miss rate is :  0.9833333333333333
+col :  speed , miss rate is :  0.9763888888888889
+col :  speed , miss rate is :  0.9888888888888889
+col :  speed , miss rate is :  0.9916666666666667
+col :  speed , miss rate is :  0.98125
+col :  speed , miss rate is :  0.9868055555555556
+col :  speed , miss rate is :  0.9916666666666667
+col :  speed , miss rate is :  0.9909722222222223
+col :  speed , miss rate is :  0.9909722222222223
+col :  speed , miss rate is :  0.9826388888888888
+col :  speed , miss rate is :  0.9875
+col :  speed , miss rate is :  0.9881944444444445
+col :  speed , miss rate is :  0.9826388888888888
+col :  speed , miss rate is :  0.9965277777777778
+2.csv  rate >>>
+col :  speed , miss rate is :  0.21319444444444444
+col :  speed , miss rate is :  0.19583333333333333
+col :  speed , miss rate is :  0.28402777777777777
+col :  speed , miss rate is :  0.24930555555555556
+col :  speed , miss rate is :  0.24861111111111112
+col :  speed , miss rate is :  0.3076388888888889
+col :  speed , miss rate is :  0.4895833333333333
+col :  speed , miss rate is :  0.4840277777777778
+col :  speed , miss rate is :  0.3625
+col :  speed , miss rate is :  0.3055555555555556
+col :  speed , miss rate is :  0.3951388888888889
+col :  speed , miss rate is :  0.33541666666666664
+col :  speed , miss rate is :  0.20347222222222222
+col :  speed , miss rate is :  0.6944444444444444
+3.csv  rate >>>
+col :  speed , miss rate is :  0.19444444444444445
+col :  speed , miss rate is :  0.18263888888888888
+col :  speed , miss rate is :  0.18194444444444444
+col :  speed , miss rate is :  0.17152777777777778
+col :  speed , miss rate is :  0.1909722222222222
+col :  speed , miss rate is :  0.21597222222222223
+col :  speed , miss rate is :  0.45694444444444443
+col :  speed , miss rate is :  0.47430555555555554
+col :  speed , miss rate is :  0.18819444444444444
+col :  speed , miss rate is :  0.1701388888888889
+col :  speed , miss rate is :  0.18611111111111112
+col :  speed , miss rate is :  0.2152777777777778
+col :  speed , miss rate is :  0.18611111111111112
+col :  speed , miss rate is :  0.6833333333333333
+4.csv  rate >>>
+col :  speed , miss rate is :  0.16666666666666666
+col :  speed , miss rate is :  0.15069444444444444
+col :  speed , miss rate is :  0.16041666666666668
+col :  speed , miss rate is :  0.15138888888888888
+col :  speed , miss rate is :  0.16875
+col :  speed , miss rate is :  0.19791666666666666
+col :  speed , miss rate is :  0.4375
+col :  speed , miss rate is :  0.45555555555555555
+col :  speed , miss rate is :  0.16458333333333333
+col :  speed , miss rate is :  0.16458333333333333
+col :  speed , miss rate is :  0.16180555555555556
+col :  speed , miss rate is :  0.17847222222222223
+col :  speed , miss rate is :  0.17083333333333334
+col :  speed , miss rate is :  0.6736111111111112
+5.csv  rate >>>
+col :  speed , miss rate is :  0.9888888888888889
+col :  speed , miss rate is :  0.9805555555555555
+col :  speed , miss rate is :  0.9895833333333334
+col :  speed , miss rate is :  0.9923611111111111
+col :  speed , miss rate is :  0.9868055555555556
+col :  speed , miss rate is :  0.9909722222222223
+col :  speed , miss rate is :  0.9930555555555556
+col :  speed , miss rate is :  0.9916666666666667
+col :  speed , miss rate is :  0.9909722222222223
+col :  speed , miss rate is :  0.9854166666666667
+col :  speed , miss rate is :  0.9875
+col :  speed , miss rate is :  0.9916666666666667
+col :  speed , miss rate is :  0.9868055555555556
+col :  speed , miss rate is :  0.9930555555555556
+6.csv  rate >>>
+col :  speed , miss rate is :  0.21597222222222223
+col :  speed , miss rate is :  0.2048611111111111
+col :  speed , miss rate is :  0.36944444444444446
+col :  speed , miss rate is :  0.39861111111111114
+col :  speed , miss rate is :  0.35833333333333334
+col :  speed , miss rate is :  0.40347222222222223
+col :  speed , miss rate is :  0.5548611111111111
+col :  speed , miss rate is :  0.4791666666666667
+col :  speed , miss rate is :  0.3277777777777778
+col :  speed , miss rate is :  0.29097222222222224
+col :  speed , miss rate is :  0.2777777777777778
+col :  speed , miss rate is :  0.31527777777777777
+col :  speed , miss rate is :  0.23333333333333334
+col :  speed , miss rate is :  0.7423611111111111
+7.csv  rate >>>
+col :  speed , miss rate is :  0.16180555555555556
+col :  speed , miss rate is :  0.16666666666666666
+col :  speed , miss rate is :  0.1597222222222222
+col :  speed , miss rate is :  0.15833333333333333
+col :  speed , miss rate is :  0.15694444444444444
+col :  speed , miss rate is :  0.19583333333333333
+col :  speed , miss rate is :  0.44305555555555554
+col :  speed , miss rate is :  0.4583333333333333
+col :  speed , miss rate is :  0.14930555555555555
+col :  speed , miss rate is :  0.14791666666666667
+col :  speed , miss rate is :  0.1597222222222222
+col :  speed , miss rate is :  0.17708333333333334
+col :  speed , miss rate is :  0.16875
+col :  speed , miss rate is :  0.6958333333333333
+8.csv  rate >>>
+col :  speed , miss rate is :  0.18541666666666667
+col :  speed , miss rate is :  0.16875
+col :  speed , miss rate is :  0.1840277777777778
+col :  speed , miss rate is :  0.1673611111111111
+col :  speed , miss rate is :  0.17777777777777778
+col :  speed , miss rate is :  0.19930555555555557
+col :  speed , miss rate is :  0.4465277777777778
+col :  speed , miss rate is :  0.46805555555555556
+col :  speed , miss rate is :  0.175
+col :  speed , miss rate is :  0.16666666666666666
+col :  speed , miss rate is :  0.1736111111111111
+col :  speed , miss rate is :  0.18125
+col :  speed , miss rate is :  0.16527777777777777
+col :  speed , miss rate is :  0.7083333333333334
+9.csv  rate >>>
+col :  speed , miss rate is :  0.19930555555555557
+col :  speed , miss rate is :  0.18611111111111112
+col :  speed , miss rate is :  0.25972222222222224
+col :  speed , miss rate is :  0.23541666666666666
+col :  speed , miss rate is :  0.23125
+col :  speed , miss rate is :  0.2875
+col :  speed , miss rate is :  0.47638888888888886
+col :  speed , miss rate is :  0.4736111111111111
+col :  speed , miss rate is :  0.33819444444444446
+col :  speed , miss rate is :  0.29930555555555555
+col :  speed , miss rate is :  0.3736111111111111
+col :  speed , miss rate is :  0.33541666666666664
+col :  speed , miss rate is :  0.18819444444444444
+col :  speed , miss rate is :  0.7284722222222222
+10.csv  rate >>>
+col :  speed , miss rate is :  0.19930555555555557
+col :  speed , miss rate is :  0.18611111111111112
+col :  speed , miss rate is :  0.25972222222222224
+col :  speed , miss rate is :  0.23541666666666666
+col :  speed , miss rate is :  0.23125
+col :  speed , miss rate is :  0.2875
+col :  speed , miss rate is :  0.47638888888888886
+col :  speed , miss rate is :  0.4736111111111111
+col :  speed , miss rate is :  0.33819444444444446
+col :  speed , miss rate is :  0.29930555555555555
+col :  speed , miss rate is :  0.3736111111111111
+col :  speed , miss rate is :  0.33541666666666664
+col :  speed , miss rate is :  0.18819444444444444
+col :  speed , miss rate is :  0.7284722222222222
+11.csv  rate >>>
+col :  speed , miss rate is :  0.9888888888888889
+col :  speed , miss rate is :  0.9895833333333334
+col :  speed , miss rate is :  0.9777777777777777
+col :  speed , miss rate is :  0.9881944444444445
+col :  speed , miss rate is :  0.9840277777777777
+col :  speed , miss rate is :  0.9784722222222222
+col :  speed , miss rate is :  0.9986111111111111
+col :  speed , miss rate is :  0.9944444444444445
+col :  speed , miss rate is :  0.9916666666666667
+col :  speed , miss rate is :  0.9888888888888889
+col :  speed , miss rate is :  0.9840277777777777
+col :  speed , miss rate is :  0.9833333333333333
+col :  speed , miss rate is :  0.9895833333333334
+col :  speed , miss rate is :  0.9958333333333333
+12.csv  rate >>>
+col :  speed , miss rate is :  0.8444444444444444
+col :  speed , miss rate is :  0.8395833333333333
+col :  speed , miss rate is :  0.8736111111111111
+col :  speed , miss rate is :  0.8826388888888889
+col :  speed , miss rate is :  0.8847222222222222
+col :  speed , miss rate is :  0.8826388888888889
+col :  speed , miss rate is :  0.9159722222222222
+col :  speed , miss rate is :  0.8979166666666667
+col :  speed , miss rate is :  0.8805555555555555
+col :  speed , miss rate is :  0.8736111111111111
+col :  speed , miss rate is :  0.8423611111111111
+col :  speed , miss rate is :  0.8527777777777777
+col :  speed , miss rate is :  0.8777777777777778
+col :  speed , miss rate is :  0.9486111111111111
+13.csv  rate >>>
+col :  speed , miss rate is :  0.9909722222222223
+col :  speed , miss rate is :  0.9840277777777777
+col :  speed , miss rate is :  0.9930555555555556
+col :  speed , miss rate is :  0.9868055555555556
+col :  speed , miss rate is :  0.9895833333333334
+col :  speed , miss rate is :  0.9854166666666667
+col :  speed , miss rate is :  0.9930555555555556
+col :  speed , miss rate is :  0.99375
+col :  speed , miss rate is :  0.9923611111111111
+col :  speed , miss rate is :  0.9840277777777777
+col :  speed , miss rate is :  0.98125
+col :  speed , miss rate is :  0.9875
+col :  speed , miss rate is :  0.9840277777777777
+col :  speed , miss rate is :  0.9854166666666667
+14.csv  rate >>>
+col :  speed , miss rate is :  0.9972222222222222
+col :  speed , miss rate is :  0.9916666666666667
+col :  speed , miss rate is :  1.0
+col :  speed , miss rate is :  0.9888888888888889
+col :  speed , miss rate is :  0.9965277777777778
+col :  speed , miss rate is :  0.9916666666666667
+col :  speed , miss rate is :  0.9854166666666667
+col :  speed , miss rate is :  0.9930555555555556
+col :  speed , miss rate is :  0.9930555555555556
+col :  speed , miss rate is :  0.9868055555555556
+col :  speed , miss rate is :  0.9888888888888889
+col :  speed , miss rate is :  0.9930555555555556
+col :  speed , miss rate is :  0.9861111111111112
+col :  speed , miss rate is :  1.0
+15.csv  rate >>>
+col :  speed , miss rate is :  0.20555555555555555
+col :  speed , miss rate is :  0.21041666666666667
+col :  speed , miss rate is :  0.20972222222222223
+col :  speed , miss rate is :  0.2111111111111111
+col :  speed , miss rate is :  0.22083333333333333
+col :  speed , miss rate is :  0.2520833333333333
+col :  speed , miss rate is :  0.49166666666666664
+col :  speed , miss rate is :  0.4736111111111111
+col :  speed , miss rate is :  0.20694444444444443
+col :  speed , miss rate is :  0.20902777777777778
+col :  speed , miss rate is :  0.20347222222222222
+col :  speed , miss rate is :  0.24375
+col :  speed , miss rate is :  0.22152777777777777
+col :  speed , miss rate is :  0.6965277777777777
+16.csv  rate >>>
+col :  speed , miss rate is :  0.20833333333333334
+col :  speed , miss rate is :  0.2048611111111111
+col :  speed , miss rate is :  0.20347222222222222
+col :  speed , miss rate is :  0.21736111111111112
+col :  speed , miss rate is :  0.19444444444444445
+col :  speed , miss rate is :  0.24305555555555555
+col :  speed , miss rate is :  0.48333333333333334
+col :  speed , miss rate is :  0.47430555555555554
+col :  speed , miss rate is :  0.20277777777777778
+col :  speed , miss rate is :  0.20972222222222223
+col :  speed , miss rate is :  0.20902777777777778
+col :  speed , miss rate is :  0.2375
+col :  speed , miss rate is :  0.22291666666666668
+col :  speed , miss rate is :  0.73125
+17.csv  rate >>>
+col :  speed , miss rate is :  0.9930555555555556
+col :  speed , miss rate is :  0.9916666666666667
+col :  speed , miss rate is :  1.0
+col :  speed , miss rate is :  0.9875
+col :  speed , miss rate is :  0.9958333333333333
+col :  speed , miss rate is :  0.9895833333333334
+col :  speed , miss rate is :  0.9875
+col :  speed , miss rate is :  0.99375
+col :  speed , miss rate is :  0.9902777777777778
+col :  speed , miss rate is :  0.9861111111111112
+col :  speed , miss rate is :  0.9881944444444445
+col :  speed , miss rate is :  0.99375
+col :  speed , miss rate is :  0.9868055555555556
+col :  speed , miss rate is :  1.0
+18.csv  rate >>>
+col :  speed , miss rate is :  0.15
+col :  speed , miss rate is :  0.13055555555555556
+col :  speed , miss rate is :  0.15347222222222223
+col :  speed , miss rate is :  0.14930555555555555
+col :  speed , miss rate is :  0.15555555555555556
+col :  speed , miss rate is :  0.19375
+col :  speed , miss rate is :  0.42986111111111114
+col :  speed , miss rate is :  0.46944444444444444
+col :  speed , miss rate is :  0.14791666666666667
+col :  speed , miss rate is :  0.14652777777777778
+col :  speed , miss rate is :  0.14583333333333334
+col :  speed , miss rate is :  0.1625
+col :  speed , miss rate is :  0.14930555555555555
+col :  speed , miss rate is :  0.6819444444444445
+19.csv  rate >>>
+col :  speed , miss rate is :  0.9958333333333333
+col :  speed , miss rate is :  0.9979166666666667
+col :  speed , miss rate is :  0.9986111111111111
+col :  speed , miss rate is :  0.9965277777777778
+col :  speed , miss rate is :  0.9993055555555556
+col :  speed , miss rate is :  0.9979166666666667
+col :  speed , miss rate is :  0.9986111111111111
+col :  speed , miss rate is :  0.9986111111111111
+col :  speed , miss rate is :  0.9979166666666667
+col :  speed , miss rate is :  0.9979166666666667
+col :  speed , miss rate is :  0.9951388888888889
+col :  speed , miss rate is :  0.9986111111111111
+col :  speed , miss rate is :  0.9993055555555556
+col :  speed , miss rate is :  1.0
+20.csv  rate >>>
+col :  speed , miss rate is :  0.1763888888888889
+col :  speed , miss rate is :  0.16875
+col :  speed , miss rate is :  0.19444444444444445
+col :  speed , miss rate is :  0.28958333333333336
+col :  speed , miss rate is :  0.19444444444444445
+col :  speed , miss rate is :  0.3993055555555556
+col :  speed , miss rate is :  0.60625
+col :  speed , miss rate is :  0.48055555555555557
+col :  speed , miss rate is :  0.1909722222222222
+col :  speed , miss rate is :  0.325
+col :  speed , miss rate is :  0.18194444444444444
+col :  speed , miss rate is :  0.2423611111111111
+col :  speed , miss rate is :  0.17291666666666666
+col :  speed , miss rate is :  0.7027777777777777
+
+
+
+
+
