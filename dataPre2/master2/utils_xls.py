@@ -3,6 +3,7 @@ from datetime import datetime
 import os 
 import numpy as np 
 import matplotlib.pyplot as plt 
+import pickle
 
 def read_excel(filepath):
     df = pd.read_excel(filepath,skip_footer=1)
@@ -50,6 +51,8 @@ def fill_df(result_df):
 def default_fill(result_df):
     for i in range(len(result_df)):
         result_df[i]=result_df[i].fillna(method='ffill')
+    for i in range(len(result_df)):
+        result_df[i]=result_df[i].fillna(method='bfill')
     return result_df
 
 
@@ -119,18 +122,27 @@ def heatmap2(data):
     plt.colorbar()
     plt.show()
 
+def mypickle(filepath,data):
+    abs_path='C:/Users/wwwa8/Documents/GitHub/CNN_SpeedPrediction/dataPre2/master2/'
+    f=open(abs_path+filepath,'wb')
+    pickle.dump(data,f)
+    f.close()
+
+
 if __name__=="__main__":
     road_dfs=[]
+    #每一个filename表示一条路的数据
     for filename in range(1,21):
         #filepath='1.xls'
-        filepath = str(filename)+'.xls'
+        abs_path='C:/Users/wwwa8/Documents/GitHub/CNN_SpeedPrediction/dataPre2/master2/'
+        filepath = abs_path+str(filename)+'.xls'
         df = read_excel(filepath)
+        #起始日期
         days=range(9,10)
-
         #每一天每一分钟对应一个点的格式
         dfs=[]
         begin_hour = 7
-        end_hour = 9
+        end_hour = 10
         for day in days:
             dfs.append(generate_data_byday(df,day,begin_hour,end_hour))
         for df in dfs:
@@ -147,8 +159,15 @@ if __name__=="__main__":
         dfs = merge_dfs(dfs,merge_step=3)
         road_dfs.append(dfs)
 
+    #data的第一维度表示路段，第二维度表示以merge_step聚合之后的数据
     data =[] 
     for road in road_dfs:
-        data.append(road[0])
+        data.append(road[0])  #road是一个list，长度是1，相当于把pandas的数据结构封装在的road[0]里面，通过road[0]来获得数据
 
+    #绘制热力图
     heatmap2(data)
+
+    #序列化
+    mypickle('dump.txt',data)
+
+    
