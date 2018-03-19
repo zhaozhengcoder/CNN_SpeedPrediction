@@ -70,6 +70,14 @@ def my_normalize(arr):
     arr = (arr-amin)/(amax-amin)
     return arr
 
+def cal_mre(pre_y,train_y):
+    diff = abs(pre_y-train_y)
+    mre_matrix = diff/train_y
+    return mre_matrix.mean()
+
+def replace_ele(train_y):
+    train_y[train_y<0.01]=0.1
+    return train_y
 
 if __name__=="__main__":
     #load
@@ -77,10 +85,11 @@ if __name__=="__main__":
     #transfer
     arr = transfer(data)
     #print (arr)  #shape 20*60 
+    #归一化
     arr = my_normalize(arr)
-    
-    
-    train_x,train_y = arr_split_traindata(arr)  #train_x shape:20*12 ;train_y shape :20*3
+    train_x,train_y = arr_split_traindata(arr)  #train_x shape:45*240(240=20*12) ;train_y shape :45*60(60=20*3)
+    #train_y中有为0的元素，改成一个非0的数字
+    train_y = replace_ele(train_y)
 
     xs = tf.placeholder(tf.float32, [None, 240])
     ys = tf.placeholder(tf.float32, [None, 60])
@@ -108,7 +117,9 @@ if __name__=="__main__":
 
     #loss
     loss = tf.reduce_mean(tf.reduce_sum(tf.square(ys - prediction),reduction_indices=[1]))
+    #loss = tf.reduce_mean(tf.reduce_sum(tf.square(ys - prediction))
     train_step = tf.train.GradientDescentOptimizer(1e-4).minimize(loss)
+    #train_step = tf.train.GradientDescentOptimizer(0.05).minimize(loss)
 
     #init
     sess = tf.Session()
@@ -122,4 +133,7 @@ if __name__=="__main__":
     for i in range(50000):
         sess.run(train_step, feed_dict={xs: train_x, ys: train_y})
         if i % 50 == 0:
-            print("loss : ",sess.run(loss, feed_dict={xs: train_x, ys: train_y}))
+            #print (sess.run(prediction, feed_dict={xs: train_x, ys: train_y}).shape)  # 45 * 60
+            pre_y = sess.run(prediction, feed_dict={xs: train_x, ys: train_y})
+            print (cal_mre(pre_y,train_y))
+            print ("loss : ",sess.run(loss, feed_dict={xs: train_x, ys: train_y}))
