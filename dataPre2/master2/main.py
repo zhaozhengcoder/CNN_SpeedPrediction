@@ -116,9 +116,10 @@ if __name__=="__main__":
     prediction = tf.nn.relu(tf.matmul(h_pool2_flat, W_fc1) + b_fc1)
 
     #loss
+    tf
     loss = tf.reduce_mean(tf.reduce_sum(tf.square(ys - prediction),reduction_indices=[1]))
     #loss = tf.reduce_mean(tf.reduce_sum(tf.square(ys - prediction))
-    train_step = tf.train.GradientDescentOptimizer(1e-4).minimize(loss)
+    train_step = tf.train.AdamOptimizer(1e-3).minimize(loss)
     #train_step = tf.train.GradientDescentOptimizer(0.05).minimize(loss)
 
     #init
@@ -130,7 +131,7 @@ if __name__=="__main__":
     sess.run(init)
 
     # 原来是1000 为了快一点 改成了1000
-    for i in range(50000):
+    for i in range(300000):
         sess.run(train_step, feed_dict={xs: train_x, ys: train_y})
         if i % 50 == 0:
             #print (sess.run(prediction, feed_dict={xs: train_x, ys: train_y}).shape)  # 45 * 60
