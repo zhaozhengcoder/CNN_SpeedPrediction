@@ -162,7 +162,7 @@ if __name__=="__main__":
     #data的第一维度表示路段，第二维度表示以merge_step聚合之后的数据
     data =[] 
     for road in road_dfs:
-        data.append(road[0])  #road是一个list，长度是1，相当于把pandas的数据结构封装在的road[0]里面，通过road[0]来获得数据
+        data.append(road[0])  #这个road[0]相当于是只是取了路段的第一天的数据  #road是一个list，长度是1，相当于把pandas的数据结构封装在的road[0]里面，通过road[0]来获得数据
 
     #绘制热力图
     heatmap2(data)
